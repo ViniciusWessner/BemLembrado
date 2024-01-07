@@ -32,6 +32,7 @@
 		CA5E75D12B2723C60047BF2B /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5E75D02B2723C60047BF2B /* SplashInteractor.swift */; };
 		CA6907312B3CEC9100EEFBC3 /* HabitCardViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6907302B3CEC9100EEFBC3 /* HabitCardViewRouter.swift */; };
 		CA69D2692AE04F040040FC2B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA69D2682AE04F040040FC2B /* SplashViewModel.swift */; };
+		CA6B52CA2B4ACA8400F0F604 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B52C92B4ACA8400F0F604 /* ProfileRequest.swift */; };
 		CA6EADAF2AE6000700A2ED90 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EADAE2AE6000700A2ED90 /* SignInView.swift */; };
 		CA6EADB12AE6004300A2ED90 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6EADB02AE6004300A2ED90 /* SignInViewModel.swift */; };
 		CA70C79D2AF80BBC00739665 /* LoadingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70C79C2AF80BBC00739665 /* LoadingButtonView.swift */; };
@@ -101,6 +102,7 @@
 		CA5E75D02B2723C60047BF2B /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		CA6907302B3CEC9100EEFBC3 /* HabitCardViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCardViewRouter.swift; sourceTree = "<group>"; };
 		CA69D2682AE04F040040FC2B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		CA6B52C92B4ACA8400F0F604 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
 		CA6EADAE2AE6000700A2ED90 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		CA6EADB02AE6004300A2ED90 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		CA70C79C2AF80BBC00739665 /* LoadingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButtonView.swift; sourceTree = "<group>"; };
@@ -549,6 +551,7 @@
 			children = (
 				CA093CE52B46D1AD009D847F /* ProfileResponse.swift */,
 				CA093CEC2B46D4AF009D847F /* ProfileUiState.swift */,
+				CA6B52C92B4ACA8400F0F604 /* ProfileRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				CA1CBB932B3612CC0053A42C /* HabitRemoteDataSource.swift in Sources */,
 				CAC77CFB2AE9C46D00D8E4B3 /* SignUpUiState.swift in Sources */,
 				CADB35E72B33B44D00F46288 /* ButtonStyle.swift in Sources */,
+				CA6B52CA2B4ACA8400F0F604 /* ProfileRequest.swift in Sources */,
 				CA093CE62B46D1AD009D847F /* ProfileResponse.swift in Sources */,
 				CA69D2692AE04F040040FC2B /* SplashViewModel.swift in Sources */,
 				CA093CE92B46D226009D847F /* ProfileRemoteDataSource.swift in Sources */,

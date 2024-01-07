@@ -13,6 +13,8 @@ enum WebService {
         case base = "https://habitplus-api.tiagoaguiar.co"
         //create user
         case postUsers = "/users"
+        //update user
+        case updateUser = "/users/%d"
         //users info
         case fetchUsers = "/users/me"
         //login
