@@ -21,7 +21,8 @@ struct Homeview: View {
                     Text("Hábitos")
                 }.tag(0) 
             
-            Text("Conteudo de graficos\(selecion)")
+//            Text("Conteudo de graficos\(selecion)")
+                viewModel.habitForChartView()
                 .tabItem {
                     Image(systemName: "chart.line.uptrend.xyaxis")
                     Text("Graficos")

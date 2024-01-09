@@ -68,6 +68,7 @@
 		CAD254872B45D81800D8711D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD254862B45D81800D8711D /* ProfileView.swift */; };
 		CAD254892B45EEAC00D8711D /* GenderSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD254882B45EEAC00D8711D /* GenderSelectorView.swift */; };
 		CAD2548B2B4608DB00D8711D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2548A2B4608DB00D8711D /* ProfileViewModel.swift */; };
+		CAD5C2582B4C14E200FE46D9 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD5C2572B4C14E200FE46D9 /* ChartView.swift */; };
 		CADB35E72B33B44D00F46288 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB35E62B33B44D00F46288 /* ButtonStyle.swift */; };
 		CADB35E92B344C4A00F46288 /* HabitCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB35E82B344C4A00F46288 /* HabitCardViewModel.swift */; };
 		CADB35EB2B344EF800F46288 /* HabitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB35EA2B344EF800F46288 /* HabitCardView.swift */; };
@@ -138,6 +139,7 @@
 		CAD254862B45D81800D8711D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CAD254882B45EEAC00D8711D /* GenderSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectorView.swift; sourceTree = "<group>"; };
 		CAD2548A2B4608DB00D8711D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		CAD5C2572B4C14E200FE46D9 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		CADB35E62B33B44D00F46288 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		CADB35E82B344C4A00F46288 /* HabitCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCardViewModel.swift; sourceTree = "<group>"; };
 		CADB35EA2B344EF800F46288 /* HabitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCardView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		CA2408B32ADEEC2B0036344B /* BemLembrado */ = {
 			isa = PBXGroup;
 			children = (
+				CAD5C2532B4C149500FE46D9 /* Charts */,
 				CAD254822B45D7D500D8711D /* Profile */,
 				CAC56E902B3C4E040046677E /* HabitDetail */,
 				CA9771902B30632D00D685CC /* Habit */,
@@ -573,6 +576,38 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CAD5C2532B4C149500FE46D9 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				CAD5C2562B4C14BB00FE46D9 /* View */,
+				CAD5C2552B4C14AE00FE46D9 /* ViewModel */,
+				CAD5C2542B4C149E00FE46D9 /* Model */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		CAD5C2542B4C149E00FE46D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CAD5C2552B4C14AE00FE46D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CAD5C2562B4C14BB00FE46D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAD5C2572B4C14E200FE46D9 /* ChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CADB35E52B33B42E00F46288 /* Modifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -704,6 +739,7 @@
 				CA011B972B2877F6001A2D01 /* RefreshRequest.swift in Sources */,
 				CA99CD672B21F27F006BD846 /* SignUpInteractor.swift in Sources */,
 				CA7D073D2AF6A718002409FD /* CustomTextFieldStyle.swift in Sources */,
+				CAD5C2582B4C14E200FE46D9 /* ChartView.swift in Sources */,
 				CAAE86862AF05C2100B0602F /* EditTextView.swift in Sources */,
 				CA97718F2B3062C000D685CC /* HomeViewRouter.swift in Sources */,
 				CA328E702B3DA21A00761DA1 /* HabitDetailRemoteDataSource.swift in Sources */,
