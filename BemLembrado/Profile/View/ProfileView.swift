@@ -107,10 +107,23 @@ struct ProfileView: View {
                     .navigationBarTitle(Text("Editar Perfil"), displayMode: .automatic)
                     .navigationBarItems(trailing: Button(action: {
                         //todo: evento de gravacao dos dados
+                        viewModel.updateUser()
                     }, label: {
-                        Image(systemName: "checkmark")
-                            .foregroundColor(.cordologo)
-                    }).opacity(disableDone ? 0 : 1)
+                        if case ProfileUiState.updateLoading = viewModel.uiState {
+                            ProgressView()
+                        } else {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(.cordologo)
+                        }
+                    })
+                        .alert(isPresented: .constant(viewModel.uiState == .updateSuccess)) {
+                            Alert(title: Text("Habit"),
+                                  message: Text("Dados atualizados com sucesso"),
+                                  dismissButton: .default(Text("Ok")) {
+                                    viewModel.uiState = .none
+                            })
+                        }
+                        .opacity(disableDone ? 0 : 1)
                     )
                     
                 }
@@ -120,6 +133,17 @@ struct ProfileView: View {
                     .alert(isPresented: .constant(true)){
                         Alert(title: Text("Habbit"), message: Text(value), dismissButton: .default(Text("Ok")) {
                             //evento do botao de acao aqui
+                            
+                        })
+                    }
+            }
+            
+            if case ProfileUiState.updateError(let value) = viewModel.uiState {
+                Text("")
+                    .alert(isPresented: .constant(true)){
+                        Alert(title: Text("Habbit"), message: Text(value), dismissButton: .default(Text("Ok")) {
+                            //evento do botao de acao aqui
+                            viewModel.uiState = .none
                             
                         })
                     }
