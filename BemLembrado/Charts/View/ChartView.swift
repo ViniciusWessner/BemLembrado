@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ChartView: View {
+    
+    @ObservedObject var viewModel: ChartViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+ 
+        BoxChartView(entries: $viewModel.entries, dates: $viewModel.dates)
+            .frame(maxWidth: .infinity, maxHeight: 350)
     }
 }
 
 #Preview {
-    ChartView()
+    ChartView(viewModel: ChartViewModel())
 }
