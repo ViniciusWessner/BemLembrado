@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		CA011B972B2877F6001A2D01 /* RefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA011B962B2877F6001A2D01 /* RefreshRequest.swift */; };
 		CA011B992B287D9A001A2D01 /* SplashRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA011B982B287D9A001A2D01 /* SplashRemoteDataSource.swift */; };
+		CA0416FC2B58059A008141B5 /* HabitValueResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0416FB2B58059A008141B5 /* HabitValueResponse.swift */; };
+		CA0416FF2B580689008141B5 /* ChartRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0416FE2B580689008141B5 /* ChartRemoteDataSource.swift */; };
+		CA0417012B58087F008141B5 /* ChartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0417002B58087F008141B5 /* ChartInteractor.swift */; };
+		CA0417032B580B6B008141B5 /* ChartUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0417022B580B6B008141B5 /* ChartUiState.swift */; };
+		CA0417092B588AB1008141B5 /* HabitCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0417082B588AB1008141B5 /* HabitCreateView.swift */; };
+		CA04170B2B588BBA008141B5 /* HabitCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA04170A2B588BBA008141B5 /* HabitCreateViewModel.swift */; };
+		CA04170D2B5899BE008141B5 /* HabitViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA04170C2B5899BD008141B5 /* HabitViewRouter.swift */; };
 		CA093CE62B46D1AD009D847F /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA093CE52B46D1AD009D847F /* ProfileResponse.swift */; };
 		CA093CE92B46D226009D847F /* ProfileRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA093CE82B46D226009D847F /* ProfileRemoteDataSource.swift */; };
 		CA093CEB2B46D3F5009D847F /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA093CEA2B46D3F5009D847F /* ProfileInteractor.swift */; };
@@ -85,6 +92,14 @@
 		AE0483245E47C9E321B01C44 /* Pods-BemLembrado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BemLembrado.debug.xcconfig"; path = "Target Support Files/Pods-BemLembrado/Pods-BemLembrado.debug.xcconfig"; sourceTree = "<group>"; };
 		CA011B962B2877F6001A2D01 /* RefreshRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshRequest.swift; sourceTree = "<group>"; };
 		CA011B982B287D9A001A2D01 /* SplashRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRemoteDataSource.swift; sourceTree = "<group>"; };
+		CA0416FB2B58059A008141B5 /* HabitValueResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitValueResponse.swift; sourceTree = "<group>"; };
+		CA0416FE2B580689008141B5 /* ChartRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartRemoteDataSource.swift; sourceTree = "<group>"; };
+		CA0417002B58087F008141B5 /* ChartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartInteractor.swift; sourceTree = "<group>"; };
+		CA0417022B580B6B008141B5 /* ChartUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUiState.swift; sourceTree = "<group>"; };
+		CA0417082B588AB1008141B5 /* HabitCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCreateView.swift; sourceTree = "<group>"; };
+		CA04170A2B588BBA008141B5 /* HabitCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCreateViewModel.swift; sourceTree = "<group>"; };
+		CA04170C2B5899BD008141B5 /* HabitViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewRouter.swift; sourceTree = "<group>"; };
+		CA04AC412B593B130026657E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CA093CE52B46D1AD009D847F /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
 		CA093CE82B46D226009D847F /* ProfileRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRemoteDataSource.swift; sourceTree = "<group>"; };
 		CA093CEA2B46D3F5009D847F /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
@@ -184,6 +199,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CA0416FD2B580678008141B5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CA0416FE2B580689008141B5 /* ChartRemoteDataSource.swift */,
+				CA0417002B58087F008141B5 /* ChartInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CA0417042B588A87008141B5 /* HabitCreate */ = {
+			isa = PBXGroup;
+			children = (
+				CA0417072B588A9C008141B5 /* View */,
+				CA0417062B588A96008141B5 /* ViewModel */,
+				CA0417052B588A90008141B5 /* Model */,
+			);
+			path = HabitCreate;
+			sourceTree = "<group>";
+		};
+		CA0417052B588A90008141B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA0417062B588A96008141B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA04170A2B588BBA008141B5 /* HabitCreateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA0417072B588A9C008141B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA0417082B588AB1008141B5 /* HabitCreateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CA093CE72B46D214009D847F /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +262,7 @@
 		CA2408A82ADEEC2B0036344B = {
 			isa = PBXGroup;
 			children = (
+				CA04AC412B593B130026657E /* README.md */,
 				CA2408B32ADEEC2B0036344B /* BemLembrado */,
 				CA2408B22ADEEC2B0036344B /* Products */,
 				740FAF5077D5BB06CC4DCD21 /* Pods */,
@@ -223,6 +281,7 @@
 		CA2408B32ADEEC2B0036344B /* BemLembrado */ = {
 			isa = PBXGroup;
 			children = (
+				CA0417042B588A87008141B5 /* HabitCreate */,
 				CAD5C2532B4C149500FE46D9 /* Charts */,
 				CAD254822B45D7D500D8711D /* Profile */,
 				CAC56E902B3C4E040046677E /* HabitDetail */,
@@ -375,6 +434,7 @@
 				CA9771972B3063DB00D685CC /* HabitViewModel.swift */,
 				CADB35E82B344C4A00F46288 /* HabitCardViewModel.swift */,
 				CA6907302B3CEC9100EEFBC3 /* HabitCardViewRouter.swift */,
+				CA04170C2B5899BD008141B5 /* HabitViewRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -607,6 +667,7 @@
 		CAD5C2532B4C149500FE46D9 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
+				CA0416FD2B580678008141B5 /* Interactor */,
 				CAD5C2562B4C14BB00FE46D9 /* View */,
 				CAD5C2552B4C14AE00FE46D9 /* ViewModel */,
 				CAD5C2542B4C149E00FE46D9 /* Model */,
@@ -617,6 +678,8 @@
 		CAD5C2542B4C149E00FE46D9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA0416FB2B58059A008141B5 /* HabitValueResponse.swift */,
+				CA0417022B580B6B008141B5 /* ChartUiState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -762,15 +825,18 @@
 			files = (
 				CA8607F12B06340000080C05 /* SignUpResponse.swift in Sources */,
 				CA2408C82ADEF58D0036344B /* SplashUIState.swift in Sources */,
+				CA04170B2B588BBA008141B5 /* HabitCreateViewModel.swift in Sources */,
 				CAEA7E2B2B0BE39A003BBB7D /* AppError.swift in Sources */,
 				CA011B992B287D9A001A2D01 /* SplashRemoteDataSource.swift in Sources */,
 				CAC77CEF2AE998F100D8E4B3 /* HomeViewModel.swift in Sources */,
 				CAC56E9A2B3C4F5A0046677E /* HabitDetailView.swift in Sources */,
 				CA6907312B3CEC9100EEFBC3 /* HabitCardViewRouter.swift in Sources */,
+				CA0417092B588AB1008141B5 /* HabitCreateView.swift in Sources */,
 				CA093CED2B46D4AF009D847F /* ProfileUiState.swift in Sources */,
 				CA1CBB972B3648A20053A42C /* Date+Extension.swift in Sources */,
 				CA99CD692B21F4CD006BD846 /* SignUpRemoteDataSource.swift in Sources */,
 				CAEA7E292B0BC484003BBB7D /* SignInRemoteDataSource.swift in Sources */,
+				CA0416FC2B58059A008141B5 /* HabitValueResponse.swift in Sources */,
 				CAC56E982B3C4EA60046677E /* HabitDetailViewModel.swift in Sources */,
 				CAC77CED2AE998DF00D8E4B3 /* Homeview.swift in Sources */,
 				CAC77CFF2AE9C5AF00D8E4B3 /* SignUpViewRouter.swift in Sources */,
@@ -787,7 +853,9 @@
 				CA6EADB12AE6004300A2ED90 /* SignInViewModel.swift in Sources */,
 				CAA095BE2AF929AD00DB4948 /* String+Extension.swift in Sources */,
 				CAA68A532B0B9FAF0005E005 /* SignInInteractor.swift in Sources */,
+				CA04170D2B5899BE008141B5 /* HabitViewRouter.swift in Sources */,
 				CA50F0952AFA57DC0073C5E0 /* WebService.swift in Sources */,
+				CA0417012B58087F008141B5 /* ChartInteractor.swift in Sources */,
 				CAC77CE62AE9982100D8E4B3 /* SignInViewRouter.swift in Sources */,
 				CAC77CFD2AE9C4F000D8E4B3 /* SignUpViewModel.swift in Sources */,
 				CA2408C62ADEF0650036344B /* SplashView.swift in Sources */,
@@ -812,11 +880,13 @@
 				CAC77CE32AE9900200D8E4B3 /* SignInUiState.swift in Sources */,
 				CA011B972B2877F6001A2D01 /* RefreshRequest.swift in Sources */,
 				CA6AA8662B501278007E67AC /* BoxChartView.swift in Sources */,
+				CA0417032B580B6B008141B5 /* ChartUiState.swift in Sources */,
 				CA99CD672B21F27F006BD846 /* SignUpInteractor.swift in Sources */,
 				CA7D073D2AF6A718002409FD /* CustomTextFieldStyle.swift in Sources */,
 				CAD5C2582B4C14E200FE46D9 /* ChartView.swift in Sources */,
 				CAAE86862AF05C2100B0602F /* EditTextView.swift in Sources */,
 				CA97718F2B3062C000D685CC /* HomeViewRouter.swift in Sources */,
+				CA0416FF2B580689008141B5 /* ChartRemoteDataSource.swift in Sources */,
 				CA328E702B3DA21A00761DA1 /* HabitDetailRemoteDataSource.swift in Sources */,
 				CA6AA8642B5010FF007E67AC /* ChartViewModel.swift in Sources */,
 				CA753E752B249F4F00D1C3CB /* LocalDataSource.swift in Sources */,
