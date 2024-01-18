@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum ChartUiState: Equatable {
+    case loading
+    case emptyChart
+    case fullChart
+    case error(String)
+}
