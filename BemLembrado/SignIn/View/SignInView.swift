@@ -99,6 +99,7 @@ extension SignInView{
                      error: "Email inválido",
                      failure: !viewModel.email.isEmail(),
                      keyboard: .emailAddress)
+            
     }
 }
 

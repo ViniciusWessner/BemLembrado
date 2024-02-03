@@ -67,7 +67,8 @@ extension SignUpView {
                      placeholder: "Nome Completo",
                      error: "Deve conter mais de 3 letras",
                      failure: viewModel.fullName.count < 3,
-                     keyboard: .alphabet)
+                     keyboard: .alphabet,
+                     autocapitalization: .words)
     }
 }
 
