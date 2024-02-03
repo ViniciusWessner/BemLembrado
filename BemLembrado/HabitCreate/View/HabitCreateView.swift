@@ -30,7 +30,7 @@ struct HabitCreateView: View {
                         self.shouldPresentCamera = true
                     }, label: {
                         VStack {
-                            Image(systemName: "camera")
+                            viewModel.image!
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
@@ -42,6 +42,12 @@ struct HabitCreateView: View {
                         .padding(.top, 50)
                 })
                     .padding(.bottom, 12)
+                    .sheet(isPresented: $shouldPresentCamera) {
+                        ImagePickerView(image: self.$viewModel.image,
+                                        imageData: self.$viewModel.imageData,
+                                        isPresented: $shouldPresentCamera,
+                                        sourceType: .photoLibrary)
+                    }
             }
                 
                 VStack{
@@ -102,7 +108,7 @@ struct HabitCreateView: View {
 struct HabitCreateView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self){
-            HabitCreateView(viewModel: HabitCreateViewModel(interactor: HabitDetailInteractor()))
+            HabitCreateView(viewModel: HabitCreateViewModel(interactor: HabitCreateInteractor()))
                 .previewDevice("iphone 11")
                 .preferredColorScheme($0)
         }

@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import Combine
+
+class HabitCreateInteractor {
+    private let remote: HabitCreateRemoteDataSource = .shred
+}
+
+extension HabitCreateInteractor {
+    
+    func save(habitCreateRequest request: HabitCreateRequest) -> Future<Void, AppError> {
+        return remote.save(request: request)
+    }
+    
+}
