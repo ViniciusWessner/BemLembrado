@@ -6,7 +6,7 @@ Bem Lembrado é uma aplicação desenvolvida para ajudá-lo a incorporar hábito
 
 ## Capturas de tela do aplicativo
 
-Veja [aqui](https://google.com) algumas capturas de tela do app
+Veja [aqui](https://github.com/ViniciusWessner/BemLembrado/blob/main/BemLembrado/Assets.xcassets/CapturasDeTela/README.MD) algumas capturas de tela do app
 
 ## Funcionalidades Principais
 
