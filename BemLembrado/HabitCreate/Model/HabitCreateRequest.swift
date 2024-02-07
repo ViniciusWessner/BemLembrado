@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct HabitCreateRequest {
+    let imageData: Data?
+    let name: String
+    let label: String
+}
