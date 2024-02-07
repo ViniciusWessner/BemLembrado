@@ -1,6 +1,4 @@
-![Image](https://github.com/ViniciusWessner/BemLembrado/blob/main/BemLembrado/Assets.xcassets/logo.imageset/logo.png?raw=true)
-
-# Nome do Seu App
+# Bem Lembrado
 
 Bem Lembrado é uma aplicação desenvolvida para ajudá-lo a incorporar hábitos saudáveis em sua vida. Criado atraves do curso de IOS developer do thiago aguiar o aplicativo conta com uma variedade de recursos e uma interface amigável, é a ferramenta ideal para acompanhar e melhorar sua rotina.
 
