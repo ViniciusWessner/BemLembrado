@@ -6,18 +6,7 @@ Bem Lembrado é uma aplicação desenvolvida para ajudá-lo a incorporar hábito
 
 ## Capturas de tela do aplicativo
 
-<img src="https://github.com/ViniciusWessner/BemLembrado/blob/main/BemLembrado/Assets.xcassets/CapturasDeTela/Habito.imageset/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-02-07%20at%2017.22.53.png?raw=true" alt="Hábitos" style="width:180px;"/>
-
-<img src="https://github.com/ViniciusWessner/BemLembrado/blob/main/BemLembrado/Assets.xcassets/CapturasDeTela/Cadastro.imageset/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-02-07%20at%2017.26.26.png?raw=true" alt="Tela de Cadastro" style="width:180px;"/>
-
-<img src="https://github.com/ViniciusWessner/BemLembrado/blob/main/BemLembrado/Assets.xcassets/CapturasDeTela/Charts.imageset/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-02-07%20at%2017.31.57.png?raw=true" alt="Gráficos" style="width:180px;"/>
-
-<img src="https://github.com/ViniciusWessner/BemLembrado/blob/main/BemLembrado/Assets.xcassets/CapturasDeTela/Image.imageset/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-02-07%20at%2017.22.53.png?raw=true" alt="Cadastro de Hábito" style="width:180px;"/>
-
-<img src="https://github.com/ViniciusWessner/BemLembrado/blob/main/BemLembrado/Assets.xcassets/CapturasDeTela/Login.imageset/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-02-07%20at%2017.26.02.png?raw=true" alt="Tela de Login" style="width:180px;"/>
-
-
-
+Veja [aqui](https://google.com) algumas capturas de tela do app
 
 ## Funcionalidades Principais
 
