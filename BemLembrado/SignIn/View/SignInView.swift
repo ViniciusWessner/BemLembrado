@@ -96,9 +96,9 @@ extension SignInView{
 //        .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
         EditTextView(text: $viewModel.email,
                      placeholder: "Email",
+                     keyboard: .emailAddress, 
                      error: "Email inválido",
-                     failure: !viewModel.email.isEmail(),
-                     keyboard: .emailAddress)
+                     failure: !viewModel.email.isEmail())
             
     }
 }
@@ -107,10 +107,10 @@ extension SignInView {
     var passwordField: some View {
         EditTextView(text: $viewModel.password,
                      placeholder: "Senha",
+                     keyboard: .emailAddress, 
                      error: "Senha deve ter ao menos 8 caracteres", 
                      failure: viewModel.password.count < 8,
-                     isSecure: true,
-                     keyboard: .emailAddress)
+                     isSecure: true)
     }
 }
 
@@ -155,7 +155,7 @@ extension SignInView{
 struct SignInView_Previews: PreviewProvider{
     static var previews: some View{
         ForEach(ColorScheme.allCases, id: \.self){
-            let viewModel = SignInViewModel(interactor: SignInInteractor())
+            let viewModel = SignInViewModel(interactor: SignInInteractor(), homeViewModel: HomeViewModel())
             SignInView(viewModel: viewModel)
                 .previewDevice("iphone 11")
                 .preferredColorScheme($0)

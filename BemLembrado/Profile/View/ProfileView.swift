@@ -64,9 +64,10 @@ struct ProfileView: View {
                                 HStack{
                                     Text("Celular")
                                     Spacer()
-                                    TextField("Digite o seu celular", text: $viewModel.phoneValidation.value)
-                                        .keyboardType(.numberPad)
-                                        .multilineTextAlignment(.trailing)
+                                    ProfileEditTextView(text: $viewModel.phoneValidation.value,
+                                                 placeholder: "Numero de celular",
+                                                 mask: "(##) ####-####",
+                                                 keyboard: .phonePad)
                                     
                                     if viewModel.phoneValidation.failure {
                                         Text("Telefone inválido")
@@ -78,8 +79,10 @@ struct ProfileView: View {
                                 HStack{
                                     Text("Data de Nascimento")
                                     Spacer()
-                                    TextField("Digite a data de nascimento", text: $viewModel.birthdayValidation.value)
-                                        .multilineTextAlignment(.trailing)
+                                    ProfileEditTextView(text: $viewModel.birthdayValidation.value,
+                                                 placeholder: "Data de Nascimento",
+                                                 mask: "##/##/####",
+                                                 keyboard: .numberPad)
                                     
                                     if viewModel.birthdayValidation.failure {
                                         Text("Insira no padrao DD/MM/AAAA")
@@ -90,15 +93,14 @@ struct ProfileView: View {
                                 
                                 NavigationLink(
                                     destination: GenderSelectorView(selectedGender: $viewModel.gender,
-                                                                    title: "Escolha o genero",
-                                                                    genders: Gender.allCases),
+                                        title: "Escolha o genero",
+                                                                    genders: Gender.allCases) .multilineTextAlignment(.trailing),
                                     
                                     label: {
                                         Text("Genero")
                                         Spacer()
                                         Text(viewModel.gender?.rawValue ?? "")
-                                            .multilineTextAlignment(.trailing)
-                                    })
+                                    }) .multilineTextAlignment(.trailing)
                                 
                             }
                         }
