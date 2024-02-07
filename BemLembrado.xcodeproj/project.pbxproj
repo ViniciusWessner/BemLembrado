@@ -52,6 +52,7 @@
 		CA753E732B249C1F00D1C3CB /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA753E722B249C1F00D1C3CB /* UserAuth.swift */; };
 		CA753E752B249F4F00D1C3CB /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA753E742B249F4F00D1C3CB /* LocalDataSource.swift */; };
 		CA7D073D2AF6A718002409FD /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7D073C2AF6A718002409FD /* CustomTextFieldStyle.swift */; };
+		CA8561902B73BC5F007DBEEE /* ProfileEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85618F2B73BC5F007DBEEE /* ProfileEditTextView.swift */; };
 		CA8607F12B06340000080C05 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8607F02B06340000080C05 /* SignUpResponse.swift */; };
 		CA8607F32B0636B900080C05 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8607F22B0636B900080C05 /* ErrorResponse.swift */; };
 		CA8607F52B06520C00080C05 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8607F42B06520C00080C05 /* SignInRequest.swift */; };
@@ -65,6 +66,7 @@
 		CAA095BE2AF929AD00DB4948 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA095BD2AF929AD00DB4948 /* String+Extension.swift */; };
 		CAA68A532B0B9FAF0005E005 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA68A522B0B9FAF0005E005 /* SignInInteractor.swift */; };
 		CAAE86862AF05C2100B0602F /* EditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAE86852AF05C2100B0602F /* EditTextView.swift */; };
+		CAB6CE052B6EB0DE00545917 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6CE042B6EB0DE00545917 /* Mask.swift */; };
 		CAC56E962B3C4E4C0046677E /* HabitDetailUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC56E952B3C4E4C0046677E /* HabitDetailUiState.swift */; };
 		CAC56E982B3C4EA60046677E /* HabitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC56E972B3C4EA60046677E /* HabitDetailViewModel.swift */; };
 		CAC56E9A2B3C4F5A0046677E /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC56E992B3C4F5A0046677E /* HabitDetailView.swift */; };
@@ -141,6 +143,7 @@
 		CA753E722B249C1F00D1C3CB /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		CA753E742B249F4F00D1C3CB /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
 		CA7D073C2AF6A718002409FD /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		CA85618F2B73BC5F007DBEEE /* ProfileEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditTextView.swift; sourceTree = "<group>"; };
 		CA8607F02B06340000080C05 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		CA8607F22B0636B900080C05 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		CA8607F42B06520C00080C05 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 		CAA095BD2AF929AD00DB4948 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CAA68A522B0B9FAF0005E005 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
 		CAAE86852AF05C2100B0602F /* EditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextView.swift; sourceTree = "<group>"; };
+		CAB6CE042B6EB0DE00545917 /* Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
 		CAC56E952B3C4E4C0046677E /* HabitDetailUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailUiState.swift; sourceTree = "<group>"; };
 		CAC56E972B3C4EA60046677E /* HabitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewModel.swift; sourceTree = "<group>"; };
 		CAC56E992B3C4F5A0046677E /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
@@ -512,8 +516,17 @@
 				CAAE86852AF05C2100B0602F /* EditTextView.swift */,
 				CA70C79C2AF80BBC00739665 /* LoadingButtonView.swift */,
 				CAD254802B459DB900D8711D /* ImageView.swift */,
+				CA85618F2B73BC5F007DBEEE /* ProfileEditTextView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CAB6CE032B6EB0CB00545917 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CAB6CE042B6EB0DE00545917 /* Mask.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		CAC56E902B3C4E040046677E /* HabitDetail */ = {
@@ -627,6 +640,7 @@
 		CAC77CF62AE9B3A900D8E4B3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CAB6CE032B6EB0CB00545917 /* Util */,
 				CA50F0932AFA57BD0073C5E0 /* Network */,
 				CAA095BC2AF9297D00DB4948 /* Lang */,
 				CAAE86842AF05A0A00B0602F /* View */,
@@ -846,6 +860,7 @@
 				CA8607F12B06340000080C05 /* SignUpResponse.swift in Sources */,
 				CA2408C82ADEF58D0036344B /* SplashUIState.swift in Sources */,
 				CA04170B2B588BBA008141B5 /* HabitCreateViewModel.swift in Sources */,
+				CAB6CE052B6EB0DE00545917 /* Mask.swift in Sources */,
 				CAEA7E2B2B0BE39A003BBB7D /* AppError.swift in Sources */,
 				CA011B992B287D9A001A2D01 /* SplashRemoteDataSource.swift in Sources */,
 				CAC77CEF2AE998F100D8E4B3 /* HomeViewModel.swift in Sources */,
@@ -869,6 +884,7 @@
 				CA97719A2B306CFC00D685CC /* HabitUiState.swift in Sources */,
 				CA8607F52B06520C00080C05 /* SignInRequest.swift in Sources */,
 				CA70C79D2AF80BBC00739665 /* LoadingButtonView.swift in Sources */,
+				CA8561902B73BC5F007DBEEE /* ProfileEditTextView.swift in Sources */,
 				CAC77CF52AE9A29200D8E4B3 /* SignUpView.swift in Sources */,
 				CA6EADB12AE6004300A2ED90 /* SignInViewModel.swift in Sources */,
 				CAA095BE2AF929AD00DB4948 /* String+Extension.swift in Sources */,
@@ -1058,6 +1074,7 @@
 				DEVELOPMENT_TEAM = DP99XGP8LH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Upload de fotos dos hábitos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1089,6 +1106,7 @@
 				DEVELOPMENT_TEAM = DP99XGP8LH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Upload de fotos dos hábitos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

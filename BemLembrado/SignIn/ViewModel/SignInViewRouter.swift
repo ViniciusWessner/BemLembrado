@@ -10,10 +10,15 @@ import Combine
 
 
 enum SignInViewRouter {
-    static func makeHomeView() -> some View{
-        let viewModel = HomeViewModel()
-        return Homeview(viewModel: viewModel)
+//    static func makeHomeView() -> some View{
+//        let viewModel = HomeViewModel()
+//        return Homeview(viewModel: viewModel)
+//    }
+    
+    static func makeHomeView(homeViewModel: HomeViewModel) -> some View{
+        return Homeview(viewModel: homeViewModel)
     }
+    
     
     static func makeSignUpView(publisher: PassthroughSubject<Bool, Never>) -> some View {
         let viewModel = SignUpViewModel(interactor: SignUpInteractor())

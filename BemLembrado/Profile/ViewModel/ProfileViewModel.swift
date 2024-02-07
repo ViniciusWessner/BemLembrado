@@ -138,7 +138,7 @@ class PhoneValidation: ObservableObject {
     @Published var failure = false
     var value: String = "" {
         didSet {
-            failure = value.count < 10 || value.count >= 12
+            failure = value.count < 14 || value.count > 15
         }
     }
 }
